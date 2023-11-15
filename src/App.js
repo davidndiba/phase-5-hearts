@@ -20,6 +20,7 @@ import UserForm from './Components/Admin/UserForm';
 import HomesAdmin from './Components/Admin/Homes';
 import HomesList from './Components/Admin/HomesList';
 import HomesForm from './Components/Admin/HomesForm';
+// import LandingPage from './Components/Pages/LandingPage';
 
 import { AuthProvider } from './Components/Pages/AuthContext';  
 
@@ -39,6 +40,8 @@ function App() {
             <Route  path="/"  element={<LandingPage/>}/>
             <Route  path="/login"  element={<Login/>}/>
             <Route  path="/register"  element={<Register/>}/>
+            <Route  path="/dashboard"  element={<Dashboard/>}/>
+            <Route path ="/landing_page" element={<LandingPage/>}/>
             <Route  path="/about"  element={<About/>}/>
             <Route  path="/donations"  element={<Donations/>}/>
             <Route  path="/children_homes"  element={<Homes/>}/>
